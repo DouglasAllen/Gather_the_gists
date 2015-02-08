@@ -3,7 +3,7 @@ before do
   content_type :txt
 end
 get '/' do
-  "is this a get request?" + request.get?.inspect
+  "is this a get request?" + request.get?.inspect + "\n"
 end
 get '/new' do
   request = Rack::Request.new(env)
@@ -15,7 +15,7 @@ end
 =begin
 This application will iterate over all the values in the @env variable and display them as
 output.
-$ curl http://localhost:9393/
+$ curl http://localhost:4567/
 ["GATEWAY_INTERFACE", "CGI/1.1"]
 ["PATH_INFO", "/"]
 ["QUERY_STRING", ""]
