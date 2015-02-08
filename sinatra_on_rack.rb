@@ -1,4 +1,8 @@
 require 'sinatra'
+configure do
+  Sinatra::Application.reset!
+  use Rack::Reloader
+end
 before do
   content_type :txt
 end
