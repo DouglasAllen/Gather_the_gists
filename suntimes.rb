@@ -20,7 +20,7 @@ eot.jd = @date.jd
 for i in 0..50
   eot.date = (@date + i).to_s
   jd = eot.jd + i
-  puts "Sunrise #{eot.display_time(eot.sunrise_time(jd), 0)}"
+  puts "Sunrise #{eot.display_time(eot.sunrise_dt, 0)}"
   puts "Sunrise #{eot.display_time(eot.sunrise_time(jd), @zone)}"
   puts "Sunset #{eot.display_time(eot.sunset_time(jd), 0)}"
   # reset the date after this else it increments twice if sunset time is over 24.
