@@ -142,4 +142,5 @@ Local Mean Noon #{julian_period_day_fraction_to_time(jpd_noon)}
 Local Noon #{julian_period_day_fraction_to_time(j_transit)}
 Local Sunrise #{julian_period_day_fraction_to_time(j_rise)}
 Local Sunset #{julian_period_day_fraction_to_time(j_set)}
-HEREDOC 
+HEREDOC
+text
