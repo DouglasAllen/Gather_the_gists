@@ -1,4 +1,5 @@
-# Experimenting with metaprogramming inspired from http://rubymonk.com/learning/books/2-metaprogramming-ruby/chapters/32-introduction-to-metaprogramming/lessons/75-being-meta
+# Experimenting with metaprogramming inspired from 
+# http://rubymonk.com/learning/books/2-metaprogramming-ruby/chapters/32-introduction-to-metaprogramming/lessons/75-being-meta
 
 require 'yaml'
  
