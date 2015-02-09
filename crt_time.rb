@@ -11,3 +11,4 @@ end
 tbuffer = ""
 puts CPUTime._strtime(tbuffer) 
 
+# https://github.com/ffi/ffi
