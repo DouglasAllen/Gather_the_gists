@@ -129,7 +129,7 @@ minutes = Integer((fraction - hours / 24.0) * 1440.0)
 seconds = Integer((fraction - hours / 24.0 - minutes / 1440.0) * 86400.0)
 Time.new($year, $month, $day, hours, minutes, seconds) + $tz * 3600
 end
-# Output results
+# Output results ^D if in irb
 text = <<HEREDOC
 The current time UTC = #{time}
 Current Julian Cycle = #{jpd_cycle}
