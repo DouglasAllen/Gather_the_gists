@@ -15,13 +15,27 @@ window do
     para "Start Date = #{start}"
     para "Finish Date = #{finish}"
     para "Date\t\t Delta Time\t\t Declination Degrees"
-    for jd in start_date..finish_date    
+    # use the range
+    #for jd in start_date..finish_date
+    (start_date..finish_date).each do |jd|    
       date = Date.jd(jd).to_s
-      timejc = eot.time_julian_centurey(jd)    
-      equation_of_time = eot.equation_of_time(timejc)    
-      degrees_declination = eot.declination(timejc)
-      delta_t = eot.display_equation_of_time(equation_of_time)
-      declination = eot.display_degrees(degrees_declination)
+      eot.ajd = jd
+      eot.ma_ta_set
+      # depricated 
+      # timejc = eot.time_julian_centurey(jd)
+      timejc = eot.ta
+      # depricated    
+      # equation_of_time = eot.equation_of_time(timejc)
+      equation_of_time = eot.eot
+      # depricated    
+      # degrees_declination = eot.declination(timejc)
+      degrees_declination = eot.declination
+      # depricated
+      # delta_t = eot.display_equation_of_time(equation_of_time)
+      delta_t = eot.string_eot
+      declination = eot.degrees_to_s(degrees_declination)
+      # similar to
+      # puts "#{date}\t  #{delta_t}\t  #{declination}"
       para "#{date}\t  #{delta_t}\t  #{declination}"
     end
   end
