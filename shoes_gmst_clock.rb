@@ -48,6 +48,7 @@ def time_now
 end 
   
 Shoes.app :height => 760, :width => 1024, :title => "My 24 hour clock" do
+  self.fullscreen = true
   background black
   @centery, @centerx = height / 2 - 10, width / 2
   @radius = @centerx / @centery * @centerx + 150
