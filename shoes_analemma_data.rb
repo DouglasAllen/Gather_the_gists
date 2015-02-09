@@ -3,7 +3,7 @@ Shoes.setup do
   gem 'eot'
 end
 require 'eot'
-eot = Equation_of_Time.new()
+eot = Eot.new()
 start = "2012-1-1"
 start_date = Date.parse(start).jd
 finish = "2012-12-31"
