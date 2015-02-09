@@ -1,3 +1,4 @@
+# compare to data here in menu http://equationoftime.herokuapp.com/alex oops! ;-)
 # analemma_data.rb
 Shoes.setup do
   gem 'eot'
