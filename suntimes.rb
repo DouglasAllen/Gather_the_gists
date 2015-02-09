@@ -8,7 +8,7 @@ require 'eot'
 
 # You need to be sure the date is in UTC
 @date = Date.parse("#{Time.now.utc.year}-#{Time.now.utc.month}-#{Time.now.utc.day}")
-eot = Equation_of_Time.new
+eot = Eot.new
 #eot.date = @date
 #~ eot.jd= @date.jd
 
