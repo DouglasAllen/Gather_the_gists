@@ -1,25 +1,33 @@
 require 'sinatra'
+
 configure do
   Sinatra::Application.reset!
   use Rack::Reloader
 end
+
 before do
   content_type :txt
 end
+
 get '/' do
   "is this a get request?" + request.get?.inspect + "\n"
 end
+
 get '/new' do
   request = Rack::Request.new(env)
   request.env.inspect
 end
+
 get '/env' do
   request.env.map { |e| e.to_s + "\n" }
 end
+
 =begin
 This application will iterate over all the values in the @env variable and display them as
 output.
+
  curl http://localhost:4567/env
+
 ["SERVER_SOFTWARE", "thin 1.6.3 codename Protein Powder"]
 ["SERVER_NAME", "localhost"]
 ["rack.input", #<StringIO:0xb970e464>]
