@@ -1,6 +1,8 @@
 require 'yaml'
+require 'green_shoes'
 
 class Book < Shoes
+
   url '/', :index
   url '/incidents/(\d+)', :incident
 
@@ -37,7 +39,9 @@ class Book < Shoes
       end
     end
   end
+
 end
 
 Shoes.app :width => 640, :height => 700,
-  :title => "Incidents, a Book"
+  :title => "Incidents, a Book" do
+end
