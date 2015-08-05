@@ -8,6 +8,8 @@
 # of a VM, even if this file is persistently loaded.
 
 module Config
+    # RUBY_VERSION.start_with?("2.2.2"[/^[0-9]+[.][0-9]+[.]/]) or
+    # raise "ruby lib version (2.2.2) doesn't match executable version (#{RUBY_VERSION})"
   RUBY_VERSION == "1.9.3" or
     raise "ruby lib version (1.9.3) doesn't match executable version (#{RUBY_VERSION})"
   VERSION = '1.9'
