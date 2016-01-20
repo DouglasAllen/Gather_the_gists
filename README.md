@@ -54,3 +54,7 @@ totaly non related
 https://www.youtube.com/watch?v=5Wn5DRII0RA
 
 http://www.philosophy.org/the-secret-of-light-series.html
+
+https://www.youtube.com/watch?v=6t2glWNeVyg
+
+https://www.youtube.com/watch?v=H4zniWIL_QA
