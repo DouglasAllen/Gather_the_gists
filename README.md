@@ -48,3 +48,7 @@ https://github.com/toothrot/gutter
 Most of these from 
 
 https://github.com/search?l=Ruby&q=shoes&type=Repositories&utf8=%E2%9C%93
+
+totaly non related
+
+https://www.youtube.com/watch?v=5Wn5DRII0RA
